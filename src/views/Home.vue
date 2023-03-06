@@ -17,7 +17,7 @@ const pokemons = ref([]);
 onMounted(async () => {
   
   axiosClient
-      .get(`pokemon?limit=10&offset=0`)
+      .get(`pokemon?limit=100&offset=0`)
       .then(({ data }) => pokemons.value=(data.results));
   
 });
